@@ -23,11 +23,20 @@ python -m variant_predictor.train             # trains & evaluates the model
 
 ## Predict a variant
 
+CLI:
+
 ```bash
 python -m variant_predictor.predict BRCA1 p.Val1736Ala
 ```
 
 Outputs a prediction, probability, and the top SHAP-attributed features driving it.
+
+Or run the Streamlit app for an interactive UI (gene dropdown, SHAP chart, and a
+training-data explorer tab):
+
+```bash
+streamlit run app.py
+```
 
 ## Architecture
 
