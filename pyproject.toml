@@ -1,0 +1,20 @@
+[project]
+name = "variant-effect-predictor"
+version = "0.1.0"
+description = "Predicts pathogenicity of missense variants in a cancer-gene panel using ClinVar labels and engineered sequence features."
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32.0",
+    "pandas>=2.2.0",
+    "scikit-learn>=1.5.0",
+    "shap>=0.46.0",
+    "joblib>=1.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools]
+packages = ["variant_predictor"]
